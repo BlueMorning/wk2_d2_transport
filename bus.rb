@@ -6,4 +6,8 @@ class Bus
     @route_number = route_number
     @destination = destination
   end
+
+  def drive
+    return "beep, beep"
+  end
 end
