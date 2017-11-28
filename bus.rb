@@ -29,4 +29,12 @@ class Bus
       @passengers.delete_at(0)
     end
   end
+
+  def pick_up_from_stop(bus_stop)
+    while(bus_stop.queue.count > 0)
+      @passengers.push(bus_stop.queue.first)
+      bus_stop.queue.delete_at(0)
+    end
+    
+  end
 end
