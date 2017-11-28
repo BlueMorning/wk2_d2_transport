@@ -24,4 +24,8 @@ class TestBus < MiniTest::Test
     assert_equal([], @bus.passengers)
   end
 
+  def test_get_number_of_passengers
+    assert_equal(0, @bus.passengers_number)
+  end
+
 end
