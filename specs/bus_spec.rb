@@ -19,4 +19,9 @@ class TestBus < MiniTest::Test
   def test_drive
     assert_equal("beep, beep", @bus.drive())
   end
+
+  def test_get_passengers
+    assert_equal([], @bus.passengers)
+  end
+
 end
