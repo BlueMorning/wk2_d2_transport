@@ -12,4 +12,8 @@ class TestBusStop < MiniTest::Test
   def test_get_name
     assert_equal("Elm Row", @bus_stop1.stop_name)
   end
+
+  def test_queue__empty
+    assert_equal(0, @bus_stop1.queue.count())
+  end
 end
